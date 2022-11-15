@@ -1,0 +1,52 @@
+.section-clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients-list{
+    display: flex;
+    gap: 30px;
+  }
+  .icon-servicer{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    }
+    
+  .icon-clients-link{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    content: "";
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content:center;
+    align-items: center;
+    background-size: cover;
+    border: 1px solid #AFB1B8;
+    transition: background-color 250ms var(--timing-funktion),
+    border 250ms var(--timing-funktion);
+    &:hover,
+    &:focus{
+     border: 1px solid #2196F3;
+      
+   }
+   
+  }
+  .icon-clients{
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+    display: flex;
+    transition: fill 250ms var(--timing-funktion);
+  }
+  
+  .icon-clients-link:hover .icon-clients,
+  .icon-clients-link:focus .icon-clients{
+    fill: #2196f3;
+   }
+  

@@ -1,0 +1,28 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    letter-spacing: 0.03em;
+    margin: 0px;
+}
+.list{
+    list-style: none;
+}
+.link{
+text-decoration: none;
+font-style: normal;
+color: #2196F3;
+}
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.accent{
+    color: var(--accent-color);
+}

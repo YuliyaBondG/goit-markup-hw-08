@@ -1,0 +1,38 @@
+.button{
+    color: var(--primary-text-color);
+    background-color: var(--accent-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: inline-block;
+    letter-spacing: 0.06em;
+    border: none;
+    padding: 10px 32px;
+    border-radius: 4px;
+    text-align: center;
+}
+.button.primary{    
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    transition: color 250ms var(--timing-funktion),
+    background-color 250ms var(--timing-funktion);
+    &:hover,
+    &:focus{
+    background-color: var(--color-active-bg);
+    }    
+}
+
+.button.secondary{
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
+    cursor: pointer;
+    transition: color 250ms var(--timing-funktion),
+    background-color 250ms var(--timing-funktion);
+    &:hover,
+    &:focus{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    }
+}
