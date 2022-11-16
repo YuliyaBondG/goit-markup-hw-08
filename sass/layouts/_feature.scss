@@ -1,6 +1,14 @@
 .section-feature{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 768px){
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px){
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
     }
     .feature-list .title{
     color: var(--primary-text-color);
@@ -14,6 +22,7 @@
     .feature-list{
      display: flex;
      gap: 30px; 
+     flex-wrap: wrap;
             
     }
     
@@ -47,5 +56,12 @@
         letter-spacing: 0.03em;
     }
     .feature-item{
-      flex-basis: calc((100% - 90px) / 4);
+      width: 100%;
+      /*flex-basis: calc((100% - 90px) / 4);*/
+      @media screen and (min-width: 768px){
+        flex-basis: calc((100% - 30px) / 2);
+      }
+      @media screen and (min-width: 1200px){
+        flex-basis: calc((100% - 90px) / 4);
+      }
     }

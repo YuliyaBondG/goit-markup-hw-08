@@ -1,8 +1,15 @@
 .section-team{
     background-color: var(--secondary-background-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 768px){
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px){
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
 }
 .team-list .title{
 color: var(--primary-text-color);
@@ -17,12 +24,14 @@ letter-spacing: 0.03em;
   justify-content: center;
   gap: 10px;
   margin-top: 16px ;
+  flex-wrap: wrap;
 }
 
 .team-list{
     display: flex;
     align-items: center;
     gap: 30px; 
+    flex-wrap: wrap;
     
 }
 
@@ -35,9 +44,14 @@ letter-spacing: 0.03em;
 }
 .team-list-employee{
     background-color: var(--primary-white-color);
-    width: calc((100% - 90px) / 4);
+    /*width: calc((100% - 90px) / 4);*/
     text-align: center;
-   
+    @media screen and (min-width: 768px){
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px){
+      flex-basis: calc((100% - 90px) / 4);
+    }
     
 }
 .employee-wrap{
@@ -51,7 +65,7 @@ letter-spacing: 0.03em;
 .services-item{
   width: 44px;
   height: 44px;
-  
+ 
      
 }
 .services-link{

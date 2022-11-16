@@ -633,7 +633,7 @@ footer{
 
 .contact{
     font-style: normal;
-    margin-top: 20px;
+    
 }
 .contact-item:not(:last-child) {
   margin-bottom: 9px;
