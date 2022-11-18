@@ -2,7 +2,7 @@
     background-color: var(--hero-background-color);
     text-align: center;
     padding-top: 200px;
-    padding-bottom: 200px; 
+    padding-bottom: 200px;
     display: block;
     max-width: 1600px;
     height: 600px;
@@ -17,15 +17,16 @@
     
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;  
+    background-size: cover; 
+    
 }
 
 
 .hero-title{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    /*font-size: 44px;*/
+    /*line-height: 1.36;*/
     letter-spacing: 0.06em;
     max-width: 696px;
     margin: 0 auto 30px;
@@ -34,5 +35,20 @@
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 30px;
+    font-weight: 900;
+    
+    line-height: 1.62;
+    text-align: center;
+    @include mobile{
+      font-size: 26px;
+    }
+    @include desktop{
+      font-size: 44px;
+      line-height: 1.36;
+    }
 
+}
+.hero__conteiner{
+  padding: 0;
+  max-width: 100%;
 }

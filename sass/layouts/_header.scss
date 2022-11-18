@@ -4,6 +4,9 @@
 .menu{
     display: flex;
     gap: 50px;
+    @include mobile{
+      display: none;
+    }
 }
 
 .menu__link{
