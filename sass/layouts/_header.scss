@@ -2,11 +2,15 @@
   border-bottom: 1px solid #ECECEC;
 }
 .menu{
-    display: flex;
+    display: none;
     gap: 50px;
-    @include mobile{
-      display: none;
+    @media screen and (min-width: 768px){
+      display: flex;
     }
+    @media screen and (min-width: 1200px){
+      display: flex;
+    }
+   
 }
 
 .menu__link{
@@ -74,9 +78,17 @@
 }
 
 .contact{
-    display: flex; 
+    display: none;
     gap: 50px;
+    @media screen and (min-width: 768px){
+      display: block;
+    }
+    @media screen and (min-width: 1200px){
+      display: flex;
+    }
+   
 }
+
 .connect{
   margin-left: auto;      
 }

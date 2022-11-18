@@ -13,11 +13,33 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/Img_head.jpg");
+    
+    url("../images/header_mobile.jpg");
     
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+    @media screen and (min-width: 768px){
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      
+      url("../images/header_tablet.jpg");
+    }
+     
+   
+    @media screen and (min-width: 1200px){
+     
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      
+      url("../images/Img_head.jpg");
+    }
     
 }
 
@@ -39,14 +61,15 @@
     
     line-height: 1.62;
     text-align: center;
-    @include mobile{
+    @media screen and (min-width: 480px){
       font-size: 26px;
     }
-    @include desktop{
+      
+    @media screen and (min-width: 1200px){
       font-size: 44px;
       line-height: 1.36;
-    }
-
+   }
+   
 }
 .hero__conteiner{
   padding: 0;
