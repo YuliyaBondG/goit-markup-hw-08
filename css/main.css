@@ -586,6 +586,106 @@ body {
   height: 16px;
 }
 
+.menu-open {
+  margin-left: auto;
+}
+
+.menu-open-icon {
+  width: 24px;
+  height: 16px;
+  background-color: transparent;
+}
+
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.menu-close {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu__link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 1.18;
+  color: #212121;
+}
+
+.mob-menu-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-contact__tel {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 1.18px;
+  color: #2196F3;
+  margin-bottom: 32px;
+}
+.mob-contact__tel:hover, .mob-contact__tel:focus {
+  color: var(--accent-color);
+}
+
+.mob-contact__mail {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1.17;
+  color: #757575;
+}
+.mob-contact__mail:hover, .mob-contact__mail:focus {
+  color: var(--accent-color);
+}
+
+.mob-menu-list {
+  margin-top: 48px;
+  margin-bottom: 306px;
+}
+
+.mob-sots-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1.22;
+  color: #2196F3;
+  position: relative;
+}
+
+.mob-sots {
+  margin-top: 64px;
+  display: flex;
+  gap: 20px;
+}
+
 .hero {
   background-color: var(--hero-background-color);
   text-align: center;
@@ -601,18 +701,32 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_mobile_2x.jpg");
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_tablet.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_tablet_2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img_head.jpg");
   }
 }
-
-.hero-title {
+@media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img_header_2x.jpg");
+  }
+}
+.hero .hero-title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   /*font-size: 44px;*/
@@ -628,13 +742,13 @@ body {
   line-height: 1.62;
   text-align: center;
 }
-@media screen and (min-width: 480px) {
-  .hero-title {
+@media screen and (min-width: 768px) {
+  .hero .hero-title {
     font-size: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero-title {
+  .hero .hero-title {
     font-size: 44px;
     line-height: 1.36;
   }
