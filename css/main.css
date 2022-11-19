@@ -58,6 +58,15 @@ body {
   color: #2196F3;
 }
 
+/*.is-hidden .modal{
+    transform:  translate(-50%, -50%) scaleY(0);
+  }*/
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -229,10 +238,6 @@ body {
   padding: 40px;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 300ms linear;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleY(0);
 }
 
 .modal-close {
@@ -589,11 +594,24 @@ body {
 .menu-open {
   margin-left: auto;
 }
+@media screen and (min-width: 1200px) {
+  .menu-open {
+    display: none;
+  }
+}
 
 .menu-open-icon {
-  width: 24px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
   background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  right: 8px;
+  top: 8px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .mob-menu {
@@ -606,6 +624,13 @@ body {
   padding-top: 48px;
   padding-bottom: 48px;
 }
+.mob-menu > .conteiner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
 
 .menu-close {
   width: 40px;
@@ -614,16 +639,15 @@ body {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  position: absolute;
   right: 8px;
   top: 8px;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 
-.menu__link {
+.mob-menu__link {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -666,7 +690,7 @@ body {
 
 .mob-menu-list {
   margin-top: 48px;
-  margin-bottom: 306px;
+  margin-bottom: 32px;
 }
 
 .mob-sots-link {
@@ -1160,8 +1184,13 @@ footer {
 }
 
 .conteiner-footer {
-  display: flex;
+  /*display: flex;*/
   align-items: baseline;
+}
+@media screen and (min-width: 1200px) {
+  .conteiner-footer {
+    display: flex;
+  }
 }
 
 .contact {
@@ -1205,14 +1234,21 @@ footer {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17px;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
 .servicer-footer {
-  margin-left: 70px;
+  margin-top: 60px;
+  /*margin-left: 70px;*/
 }
 
 .text-footer {
@@ -1229,8 +1265,12 @@ footer {
 
 .servicer-footer-list {
   display: flex;
-  justify-content: center;
   gap: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .servicer-footer-list {
+    justify-content: center;
+  }
 }
 
 .footer-link {

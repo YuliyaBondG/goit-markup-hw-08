@@ -13,6 +13,14 @@ text-decoration: none;
 font-style: normal;
 color: #2196F3;
 }
+/*.is-hidden .modal{
+    transform:  translate(-50%, -50%) scaleY(0);
+  }*/
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;

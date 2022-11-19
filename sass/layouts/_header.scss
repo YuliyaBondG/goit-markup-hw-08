@@ -150,11 +150,23 @@
 
 .menu-open{
   margin-left: auto;
+  @include desktop{
+    display: none;
+  }
 }
 .menu-open-icon{
-  width: 24px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
   background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+ 
+  right: 8px;
+  top: 8px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   
 }
 .mob-menu{
@@ -166,6 +178,13 @@
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  > .conteiner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
 }
 .menu-close{
   width: 40px;
@@ -174,15 +193,14 @@
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  position: absolute;
   right: 8px;
   top: 8px;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.menu__link{
+.mob-menu__link{
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -224,7 +242,7 @@ color: #757575;
 }
 .mob-menu-list{
   margin-top: 48px;
-  margin-bottom: 306px;
+  margin-bottom: 32px;
 }
 .mob-sots-link{
 font-family: 'Roboto', sans-serif;
