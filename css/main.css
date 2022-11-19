@@ -169,9 +169,11 @@ body {
   margin-left: auto;
 }
 
-.subscription-wrap {
-  display: flex;
-  gap: 12px;
+@media screen and (min-width: 1200px) {
+  .subscription-wrap {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .subscription-label {
@@ -185,7 +187,12 @@ body {
   color: #FFFFFF;
   margin-bottom: 20px;
   display: block;
-  text-align: left;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription-label {
+    text-align: left;
+  }
 }
 
 .subscription-button {
@@ -199,11 +206,20 @@ body {
   font-weight: 700;
   font-size: 16px;
   justify-content: center;
-  display: flex;
   align-items: center;
   padding: 10px 28px;
   border: none;
   gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .subscription-button {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription-button {
+    display: flex;
+  }
 }
 
 .subscription-input {
@@ -215,6 +231,7 @@ body {
   background-color: transparent;
   padding-left: 16px;
   outline: none;
+  margin-bottom: 20px;
 }
 
 .backdrop {
@@ -1184,16 +1201,23 @@ footer {
 }
 
 .conteiner-footer {
-  /*display: flex;*/
-  align-items: baseline;
+  text-align: center;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .conteiner-footer {
+    display: flex;
+    align-items: baseline;
+  }
 }
 @media screen and (min-width: 1200px) {
   .conteiner-footer {
     display: flex;
+    align-items: baseline;
   }
 }
 
-.contact {
+.contact-address {
   font-style: normal;
   /*margin-top: 20px;*/
 }
@@ -1234,21 +1258,24 @@ footer {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17px;
+  font-size: 26px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-}
-@media screen and (min-width: 1200px) {
-  .footer-logo {
-    font-size: 26px;
-    line-height: 1.19;
-  }
 }
 
 .servicer-footer {
   margin-top: 60px;
-  /*margin-left: 70px;*/
+}
+@media screen and (min-width: 768px) {
+  .servicer-footer {
+    margin-left: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .servicer-footer {
+    margin-left: 70px;
+  }
 }
 
 .text-footer {
@@ -1265,12 +1292,8 @@ footer {
 
 .servicer-footer-list {
   display: flex;
+  justify-content: center;
   gap: 10px;
-}
-@media screen and (min-width: 1200px) {
-  .servicer-footer-list {
-    justify-content: center;
-  }
 }
 
 .footer-link {
