@@ -164,9 +164,22 @@ body {
   color: var(--primary-white-color);
 }
 
-.subscription {
-  position: relative;
-  margin-left: auto;
+@media screen and (min-width: 480px) {
+  .subscription {
+    position: relative;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscription {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    position: relative;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -214,6 +227,7 @@ body {
 @media screen and (min-width: 768px) {
   .subscription-button {
     display: flex;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -671,7 +685,7 @@ body {
   height: 40px;
   margin-left: auto;
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   border-radius: 50%;
   right: 8px;
   top: 8px;
@@ -874,6 +888,20 @@ body {
   margin-bottom: 10px;
 }
 
+.title-feature {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .title-feature {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-feature {
+    text-align: left;
+  }
+}
+
 .feature-icon {
   width: 70px;
   height: 70px;
@@ -903,16 +931,21 @@ body {
 }
 
 .work {
-  padding-bottom: 60px;
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .work {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .work {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .work {
+    display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1058,6 +1091,21 @@ body {
 .services-link:hover, .services-link:focus {
   background-color: var(--accent-color);
   fill: #FFFFFF;
+}
+
+.section-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .section-clients {
@@ -1243,13 +1291,19 @@ footer {
 @media screen and (min-width: 768px) {
   .conteiner-footer {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner-footer {
     display: flex;
     align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner-footer-contact {
+    margin-left: 76px;
   }
 }
 
@@ -1305,7 +1359,8 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .servicer-footer {
-    margin-left: 70px;
+    margin-top: 0;
+    margin-left: 165px;
   }
 }
 @media screen and (min-width: 1200px) {

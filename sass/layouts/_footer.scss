@@ -10,12 +10,18 @@ footer{
   
   @include tablet{
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
   }
   @include desktop{
     display: flex;
     align-items: baseline;
   }
+}
+
+.conteiner-footer-contact{
+ @include tablet{
+  margin-left: 76px;
+ } 
 }
 
 .contact-address{
@@ -67,7 +73,8 @@ color: var(--primary-white-color);
 margin-top: 60px;
 
 @include tablet {
-  margin-left: 70px;
+  margin-top: 0;
+  margin-left: 165px;
 }
 
   @include desktop{

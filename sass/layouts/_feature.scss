@@ -39,6 +39,17 @@
     
     .title{
       margin-bottom: 10px;
+      
+    }
+    .title-feature{
+      text-align: center;
+
+      @include tablet{
+      text-align: left;
+      }
+      @include desktop{
+      text-align: left;
+      }
     }
     .feature-icon{
       width: 70px;
@@ -54,9 +65,11 @@
     }
     .feature-item{
       width: 100%;
+     
       /*flex-basis: calc((100% - 90px) / 4);*/
       @media screen and (min-width: 768px){
         flex-basis: calc((100% - 30px) / 2);
+        
       }
       @media screen and (min-width: 1200px){
         flex-basis: calc((100% - 90px) / 4);

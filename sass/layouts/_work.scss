@@ -1,13 +1,18 @@
 .work{
-    padding-bottom: 60px;
-    @media screen and (min-width: 768px){
-      padding-top: 60px;
-      padding-bottom: 60px;
+  display: none;
+    
+    @include mobile{
+      display: none;
     }
-    @media screen and (min-width: 1200px){
+    @include tablet{
+      display: none;
+    }
+    @include desktop{
+      display: flex;
       padding-top: 94px;
       padding-bottom: 94px;
     }
+    
   }
   .work__list .title{
   background-color: var(--primary-white-color);

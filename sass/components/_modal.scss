@@ -1,11 +1,21 @@
 .subscription{
+    
+  @include mobile{
+  position: relative;
+  margin-left: auto;
+  }
+
+  @include tablet{
+    margin: 0 auto;
+  }
+  @include desktop{
     position: relative;
     margin-left: auto;
+    }
     
    }
    .subscription-wrap{
      
-
      @include desktop{
       display: flex;
       gap: 12px;
@@ -23,8 +33,7 @@
    margin-bottom: 20px;
    display: block;
    margin-top: 60px;
-   
-   
+    
 
    @include desktop{
     text-align: left;
@@ -50,6 +59,10 @@
 
    @include tablet{
     display: flex;
+    margin: 0 auto;
+    
+   
+
    }
    @include desktop{
     display: flex;
