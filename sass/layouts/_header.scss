@@ -80,12 +80,14 @@
 .contact{
     display: none;
     gap: 50px;
+
     @include tablet{
       display: block;
       
     }
     @include desktop{
       display: flex;
+     
     }
     
    
@@ -112,6 +114,12 @@
     color: var(--accent-color);
     fill: currentColor;
 }
+    @include tablet{
+    margin-bottom: 10px;
+}
+    @include desktop{
+      margin-bottom: 0px;
+    }
 }
 .contact__icon-envelope{
   margin-right: 10px;   
@@ -122,6 +130,9 @@
 .menu__item{
   display: flex;
   align-items: center;
+  
+    
+  
 }
 
 
@@ -150,6 +161,12 @@
 
 .menu-open{
   margin-left: auto;
+  background-color: transparent;
+  border: none;
+
+  @include tablet{
+    display: none;
+  }
   @include desktop{
     display: none;
   }
@@ -159,7 +176,7 @@
   height: 40px;
   margin-left: auto;
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
  
   right: 8px;
   top: 8px;
@@ -208,10 +225,16 @@ font-size: 40px;
 line-height: 47px;
 letter-spacing: 1.18;
 color: #212121;
+
 }
 .mob-menu-list__item:not(:last-child){
   margin-bottom: 32px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);;
+  margin-right: 10px;
 }
+
+
 .mob-contact__tel{
 font-family: 'Roboto', sans-serif;
 font-style: normal;

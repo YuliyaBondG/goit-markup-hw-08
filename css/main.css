@@ -573,6 +573,16 @@ body {
   color: var(--accent-color);
   fill: currentColor;
 }
+@media screen and (min-width: 768px) {
+  .contact__mail {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__mail {
+    margin-bottom: 0px;
+  }
+}
 
 .contact__icon-envelope {
   margin-right: 10px;
@@ -610,6 +620,13 @@ body {
 
 .menu-open {
   margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu-open {
@@ -622,7 +639,7 @@ body {
   height: 40px;
   margin-left: auto;
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   right: 8px;
   top: 8px;
   display: block;
@@ -676,6 +693,9 @@ body {
 
 .mob-menu-list__item:not(:last-child) {
   margin-bottom: 32px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
 }
 
 .mob-contact__tel {
@@ -796,19 +816,25 @@ body {
 }
 
 .hero__conteiner {
-  padding: 0;
   max-width: 100%;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+@media screen and (min-width: 768px) {
+  .hero__conteiner {
+    padding-right: 204px;
+    padding-left: 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__conteiner {
+    padding: 0;
+  }
 }
 
 .section-feature {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .section-feature {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .section-feature {
@@ -1068,7 +1094,7 @@ body {
 }
 
 .icon-clients-link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: flex;
   content: "";
@@ -1083,6 +1109,16 @@ body {
 }
 .icon-clients-link:hover, .icon-clients-link:focus {
   border: 1px solid #2196F3;
+}
+@media screen and (min-width: 768px) {
+  .icon-clients-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-clients-link {
+    width: 170px;
+  }
 }
 
 .icon-clients {

@@ -100,6 +100,16 @@
    
 
 .hero__conteiner {
-  padding: 0;
+  
   max-width: 100%;
+  padding-right: 60px;
+  padding-left: 60px;
+
+  @include tablet{
+    padding-right: 204px;
+    padding-left: 204px;
+  }
+  @include desktop{
+    padding: 0;
+  }
 }

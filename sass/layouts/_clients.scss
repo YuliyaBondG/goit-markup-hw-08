@@ -1,6 +1,7 @@
 .section-clients{
   padding-top: 60px;
   padding-bottom: 60px;
+  
   @media screen and (min-width: 768px){
     padding-top: 60px;
     padding-bottom: 60px;
@@ -26,7 +27,8 @@
     }
     
   .icon-clients-link{
-    width: 170px;
+    
+    width: 210px;
     height: 92px;
     display: flex;
     content: "";
@@ -42,8 +44,14 @@
     &:hover,
     &:focus{
      border: 1px solid #2196F3;
-      
-   }
+    }
+
+    @include tablet{
+      width: 226px;
+    }
+    @include desktop{
+     width: 170px;
+    }
    
   }
   .icon-clients{
