@@ -9,12 +9,15 @@ footer{
   
   
   @include tablet{
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
   }
   @include desktop{
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
+    text-align: left;
   }
 }
 
@@ -40,6 +43,7 @@ letter-spacing: 0.03em;
 color: var(--color-foter-contact);
 text-decoration: none;
 font-style: normal;
+margin-top: 20px;
 &:hover,
 &:focus{
     color: var(--accent-color);
@@ -68,6 +72,7 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--primary-white-color);
+
 }
 .servicer-footer{
 margin-top: 60px;
