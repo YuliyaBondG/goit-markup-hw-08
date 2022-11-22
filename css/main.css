@@ -174,7 +174,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .subscription {
-    margin-left: 166px;
+    /*margin-left: 166px;*/
   }
 }
 @media screen and (min-width: 1200px) {
@@ -695,6 +695,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: absolute;
 }
 
 .mob-menu__link {
@@ -762,7 +763,6 @@ body {
 .mob-sots {
   margin-top: 64px;
   display: flex;
-  gap: 20px;
 }
 
 .hero {
@@ -1298,6 +1298,7 @@ footer {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1311,7 +1312,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .conteiner-footer-contact {
-    margin-left: 76px;
+    /*margin-left: 76px;*/
   }
 }
 

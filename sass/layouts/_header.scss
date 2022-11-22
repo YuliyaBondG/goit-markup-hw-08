@@ -162,6 +162,7 @@
   margin-left: auto;
   background-color: transparent;
   border: none;
+  
 
   @include tablet{
     display: none;
@@ -215,6 +216,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: absolute;
+  
  
 }
 .mob-menu__link{
@@ -284,5 +287,5 @@ position: relative;
 .mob-sots{
   margin-top: 64px;
   display: flex;
-  gap: 20px;
+  
 }

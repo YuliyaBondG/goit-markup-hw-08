@@ -12,6 +12,7 @@ footer{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   @include desktop{
     display: flex;
@@ -23,7 +24,7 @@ footer{
 
 .conteiner-footer-contact{
  @include tablet{
-  margin-left: 76px;
+  /*margin-left: 76px;*/
  } 
 }
 
